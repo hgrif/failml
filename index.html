@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./mvp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML fail</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="./robot-line.png">
+    
+  </head>
+  <body>
+    <header>
+    <p style="color:gray;font-size:9px;"><a href=https://neocities.org>neocities</a> | <a href=https://andybrewer.github.io/mvp/>mvp</a> | <a href=https://remixicon.com/>remix icon</a></p>
+    <br>
+    <br>
+    <p>Your Machine Learning project will fail because...</p>
+    <br>
+    <br>
+    <h1 id="reason"></h1>
+    </header>
+
+    <script>
+      document.getElementById("reason").innerHTML = selectReason();
+      
+      function selectReason() {
+          var items = [
+            "your model is perfect, but you don't know how to use it",
+            "the recall is high, but precision is low",
+            "you haven't tried something simpler",
+            "the impact is not worth the effort",
+            "the business doesn't understand <br>your technical mumbo jumbo",
+            "you don't understand the data",
+            "the dataset you need does not exist",
+            "the data is stale",
+            "the application needs way too much engineering",
+            "you had assumptions about data quality… those are wrong",
+            "the data schema has changed",
+            "your model is using data that it should not use",
+            "there's bias in the dataset",
+            "there's data drift",
+            "each model iteration takes days",
+            "training =/= prediction",
+            "feature leakage",
+            "flaky pipelines",
+            "you're overfitting too much",
+            "you're underfitting too much",
+            "the model performs well, but can't be interpreted",
+            "you used deep learning instead of traditional feature engineering",
+            "you used traditional feature engineering instead of deep learning "
+            ];
+          var item = items[Math.floor(Math.random()*items.length)];
+          return item
+      }
+    </script>
+
+
+  </body>
+</html>
